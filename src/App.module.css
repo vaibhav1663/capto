@@ -1,0 +1,38 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.root {
+  display: grid; /* Use grid for layout */
+  flex-grow: 1; /* Allow the root element to grow and take available space */
+  grid-template-rows: auto 1fr auto; /* Content area grows and adjusts */
+  grid-template-columns: 1fr; /* Single column grid */
+  align-content: flex-start; /* Align the content to the top */
+  justify-content: center; /* Center content horizontally */
+  row-gap: 24px; /* Space between rows */
+  padding: 24px; /* Padding inside the root element */
+
+  /* For handling the placeholder layout */
+  &.placeholder {
+    grid-template-rows: minmax(0, 1fr) auto; /* Adjust the grid to take up more space when necessary */
+  }
+}
+
+.main {
+  position: relative;
+  justify-self: center;
+  border: 1px solid rgba(var(--mui-palette-dividerChannel) / 8%);
+  border-radius: 12px;
+  width: fill-available;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  .placeholder & {
+    aspect-ratio: 16 / 9;
+  }
+}

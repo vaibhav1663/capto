@@ -1,0 +1,20 @@
+.root {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  justify-items: center;
+  row-gap: 16px;
+  background: linear-gradient(
+    160deg,
+    rgb(204 251 252),
+    rgb(213 240 255),
+    rgb(190 210 249)
+  );
+  height: 100%;
+  color: var(--mui-palette-secondary-contrastText);
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
