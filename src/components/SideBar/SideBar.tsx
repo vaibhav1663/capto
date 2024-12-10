@@ -19,11 +19,11 @@ const SideBar = () => {
       <div className={styles.sidebarContent}>
 
         <div className={styles.sidebarSection} >
-          <a target='_blank' href="https://www.producthunt.com/posts/capto-3" style={{ textDecoration: 'none' , color: '#f1f1f1', display: 'flex' , alignItems: 'center' , marginBottom: 4 , paddingLeft: 4, marginTop: 4}}>
+          {/* <a target='_blank' href="https://www.producthunt.com/posts/capto-3" style={{ textDecoration: 'none' , color: '#f1f1f1', display: 'flex' , alignItems: 'center' , marginBottom: 4 , paddingLeft: 4, marginTop: 4}}>
             <div style={{ display : 'inline-block',textAlign: 'center', fontSize: 12 , width: 20 , height: 20, backgroundColor: '#f26625' , borderRadius: 4 , marginRight: 8, fontWeight: 600 }}>P</div>
             <span style={{ textAlign: 'center' , fontSize: 14 , color: 'rgb(199 199 199)'}}>Support us on Product hunt</span>
             <ArrowForwardIos style={{ fontSize: 10 , marginLeft: 2 }} />
-          </a>
+          </a> */}
           <a
             href="/"
             style={{ paddingBottom: 0, display: 'flex', alignItems: 'center' , textDecoration: 'none' , color: 'white' }}
