@@ -4,6 +4,7 @@ import { useCameraConfig } from 'contexts/configContext';
 import { useRecording } from 'contexts/recording';
 
 import styles from './SideBar.module.css';
+import { ArrowForwardIos } from '@mui/icons-material';
 
 const SideBar = () => {
   const { cameraPosition, setCameraPosition } = useCameraConfig();
@@ -16,19 +17,26 @@ const SideBar = () => {
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebarContent}>
-        <a
-          href="/"
-          className={styles.sidebarSection}
-          style={{ paddingBottom: 0, display: 'flex', alignItems: 'center' }}
-        >
-          <img
-            src={'./logo.svg'}
-            alt="logo"
-            style={{ width: 26, height: 26, marginRight: 4 }}
-          />
-          <h1>Capto</h1>
-        </a>
-        <div className={styles.sidebarSection}>
+
+        <div className={styles.sidebarSection} >
+          <a href="https://www.producthunt.com/posts/capto-3" style={{ textDecoration: 'none' , color: '#f1f1f1', display: 'flex' , alignItems: 'center' , marginBottom: 4 , paddingLeft: 4, marginTop: 4}}>
+            <div style={{ display : 'inline-block',textAlign: 'center', fontSize: 12 , width: 20 , height: 20, backgroundColor: '#f26625' , borderRadius: 4 , marginRight: 8, fontWeight: 600 }}>P</div>
+            <span style={{ textAlign: 'center' , fontSize: 14 , color: 'rgb(199 199 199)'}}>Support us on Product hunt</span>
+            <ArrowForwardIos style={{ fontSize: 10 , marginLeft: 2 }} />
+          </a>
+          <a
+            href="/"
+            style={{ paddingBottom: 0, display: 'flex', alignItems: 'center' , textDecoration: 'none' , color: 'white' }}
+          >
+            <img
+              src={'./logo.svg'}
+              alt="logo"
+              style={{ width: 26, height: 26, marginRight: 4 }}
+            />
+            <h1>Capto</h1>
+          </a>
+        </div>
+        <div className={styles.sidebarSection} style={{paddingTop: 0}}>
           <h2>Camera position</h2>
           <div
             className={styles.cameraPositionList}

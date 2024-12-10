@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Gheist';
+  src: url('./fonts/Gheist.ttf') format('truetype');
+}
 .mainContainer {
   display: flex;
   align-items: center;
@@ -14,7 +18,7 @@
   justify-content: center; /* Center content horizontally */
   row-gap: 24px; /* Space between rows */
   padding: 24px; /* Padding inside the root element */
-
+  font-family: 'Bricolage Grotesque', sans-serif;
   /* For handling the placeholder layout */
   &.placeholder {
     grid-template-rows: minmax(0, 1fr) auto; /* Adjust the grid to take up more space when necessary */
@@ -35,4 +39,8 @@
   .placeholder & {
     aspect-ratio: 16 / 9;
   }
+}
+*{
+  font-family: 'Gheist', sans-serif;
+  font-weight: 500;
 }
